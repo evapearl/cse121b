@@ -2,50 +2,51 @@
 
 /* FUNCTIONS */
 /* Function Definition - Add Numbers */
-function add (number1, number2) {
+
+function add(number1, number2) {
     return number1 + number2;
 }
-function addNumbers () {
-    let add1 =Number(document.getElementById('add1').value);
+function addNumbers() {
+    let add1 =Number(document.querySelector('#add1').value);
     let add2 = Number(document.querySelector('#add2').value);
-    document.getElementById('sum').innerHTML = add(add1, add2);
-}
+    document.querySelector('#sum').value = add(add1, add2);
+};
 
-document.getElementById('addNumbers').addEventListener('click', addNumbers);
+document.querySelector('#addNumbers').addEventListener('click', addNumbers);
 
 /* Function Expression - Subtract Numbers */
 const subtract = function(number1, number2) {
     return `${number1} - ${number2}`;
 }
-function subtractNumbers () {
-    const subtractNumber1 = Number(document.getElementById('subtract1').value);
-    const subtractNumber2 = Number(document.getElementById('#subtract2').value);
-    document.getElementById("difference").innerHTML = subtract(subtractNumber1, subtractNumber2);
-}
+function subtractNumbers() {
+    const subtractNumber1 = Number(document.querySelector('#subtract1').value);
+    const subtractNumber2 = Number(document.querySelector('#subtract2').value);
+    document.querySelector("#difference").value = subtract(subtractNumber1, subtractNumber2);
+};
 
-document.querySelector('subtractNumbers').addEventListener('click', subtractNumbers);
+document.querySelector('#subtractNumbers').addEventListener('click', subtractNumbers);
 
 /* Arrow Function - Multiply Numbers */
 const Multiply = (number1, number2) => `${number1} * ${number2}`;
 
-function multiplyNumbers () {
-    const multiplyNumber1 = Number(document.getElementById('factor1').value);
-    const multiplyNumber2 = Number(document.getElementById('#factor2').value);
-    document.getElementById("product").innerHTML = Multiply(multiplyNumber1, multiplyNumber2);
+function multiplyNumbers() {
+    const multiplyNumber1 = Number(document.querySelector('#factor1').value);
+    const multiplyNumber2 = Number(document.querySelector('#factor2').value);
+    document.querySelector("#product").value = Multiply(multiplyNumber1, multiplyNumber2);
 }
-document.querySelector('multiplyNumbers').addEventListener('click', multiplyNumbers);
+document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
 
 /* Open Function Use - Divide Numbers */
-function divid (dividend, divisor) {
-    return dividend + divisor;
+function divide(dividend, divisor) {
+    return dividend / divisor;
 }
-function dividNumbers () {
-    let dividend =Number(document.getElementById('dividend').value);
-    let divisor = Number(document.getElementById('#divisor').value);
-    document.getElementById("quotient").innerHTML= divid(dividend + divisor);
+function divideNumbers () {
+    let dividend =Number(document.querySelector('#dividend').value);
+    let divisor = Number(document.querySelector('#divisor').value);
+    document.querySelector("#quotient").value = divide(dividend, divisor);
 }
-document.querySelector('dividNumbers').addEventListener('click', dividNumbers);
+document.querySelector('#divideNumbers').addEventListener('click', divideNumbers);
 
 
 /* Decision Structure */
@@ -64,7 +65,7 @@ document.getElementById('year').textContent = currentYear;
 
 let numbersArray = [1, 2, 3, 4, 5 , 6, 7, 8, 9, 10, 11, 12, 13];
 
-document.getElementById('#array').innerHTML = numbersArray;
+document.querySelector('#array').value = numbersArray;
  
 
 /* Output Odds Only Array */ 
