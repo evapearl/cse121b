@@ -6,7 +6,7 @@
 // Declare and instantiate variables for name, year and image 
 let fullName = 'Eunice Ebevuhe';
 const currentYear = Date();
-const profilePicture = 'images/img.jpg';
+const profilePicture = 'images/mg1.jpg';
 console.log(`It is now ${currentYear}`);
 
 
