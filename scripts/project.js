@@ -57,15 +57,12 @@ const sortBy = (fishes) => {
         case "all":
             displayFishes(fishes);
             break;
+
     }
-};
-
-const fishe = fishList;
-fishe.sort();
-
-const result = fishe.reduce((tally, fish) => {
-    tally[fish] =(tally[fish] || 0) +1
-    return tally;
-}, {});
+    const result = fishes.reduce((tally, fish) => {
+        tally [fish] = (tally[fish] || 0) + 1
+        return tally;
+    }, {});
+}
 document.querySelector("#sortBy").addEventListener("change", () => sortBy(fishList));
 getFish();
