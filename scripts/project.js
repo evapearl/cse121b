@@ -19,7 +19,7 @@ let displayFishes = (fishes) => {
 };
 
 const getFish = async () => {
-    const response = await fetch("https://www.fishwatch.gov/developers");
+    const response = await fetch("https://www.facts.dev/api/fishwatch-api");
     if (response.ok) {
         fishList = await response.text();
         displayFishes(fishList);
