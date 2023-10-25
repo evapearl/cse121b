@@ -60,9 +60,10 @@ const sortBy = (fishes) => {
     }
 };
 
+const fish = fishList;
 fishes.sort((a,b => a - b));
 
-const result = fishes.reduce((tally, fish) => {
+const result = fishe.reduce((tally, fish) => {
     tally[fish] =(tally[fish] || 0) +1
     return tally;
 }, {});
