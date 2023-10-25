@@ -1,4 +1,4 @@
-const fishElement = document.querySelector("#Fishes");
+const fishElement = document.querySelector("Fishes");
 let fishList = [];
 
 let displayFishes = (fishes) => {
