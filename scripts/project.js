@@ -59,10 +59,6 @@ const sortBy = (fishes) => {
             break;
 
     }
-    const result = fishes.reduce((tally, fish) => {
-        tally [fish] = (tally[fish] || 0) + 1
-        return tally;
-    }, {});
-}
+};
 document.querySelector("#sortBy").addEventListener("change", () => sortBy(fishList));
 getFish();
