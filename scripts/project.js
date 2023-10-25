@@ -61,7 +61,7 @@ const sortBy = (fishes) => {
 };
 
 const fishe = fishList;
-fishe.sort((a,b => a - b));
+fishe.sort();
 
 const result = fishe.reduce((tally, fish) => {
     tally[fish] =(tally[fish] || 0) +1
